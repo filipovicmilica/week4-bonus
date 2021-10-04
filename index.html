@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+  <title>Week4 bonus</title>
+</head>
+<body>
+  <section class="glavni" role="main">
+    <div class="levi">
+      <h1>
+        Learn to code by <br> watching others
+      </h1>
+      <p>
+        Seee how expirienced developer solve problems in real-time.
+        Watching scripted tutorials is great, but understanding how developers
+        think is invaluable.
+      </p>
+    </div>
+    <div class="desni">
+      <div clas="ljubicasti">
+        <p id="p1">
+          <b>Try it free 7 days</b>  then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form id="forma">
+        <input type="text"  placeholder="First Name" id="firstname">
+        <div class="error-msg">
+          <img id="img1"src="images/icon-error.svg"  hidden>
+          <label id="lbl1" for="firstname"  hidden>Firstname cannot be empty</label>  
+        </div>
+        
+        <input type="text"  placeholder="Last Name" id="lastname">
+        <div class="error-msg">
+          <img id="img2" src="images/icon-error.svg"  hidden>
+          <label id="lbl2" for="lastname"  hidden>Lastname cannot be empty</label>  
+        </div>
+       
+        <input type="email"  placeholder="Email Addres" id="email">
+        <div class="error-msg">
+          <img id="img3" src="images/icon-error.svg" hidden>
+          <label id="lbl3" for="email"  hidden>Looks like this is not an email</label>  
+        </div>
+        
+        <input type="password"  placeholder="Password" id="password">
+        <div class="error-msg">
+          <img  id="img4" src="images/icon-error.svg"  hidden>
+          <label id="lbl4" for="password"  hidden>Password cannot be empty</label>  
+        </div>
+        
+        <button type="button" onclick="proveriInpute()">CLAIM YOUR FREE TRIAL</button>
+        
+        <script>
+          function proveriInpute(){
+            let in1=document.getElementById("firstname");
+            if(in1.value==""){
+              in1.style.border="2px solid red";
+              document.getElementById("img1").hidden=false;
+              document.getElementById("lbl1").hidden=false;
+            }
+            else{
+              in1.style.border="1px solid #5E54A4;";
+              document.getElementById("img1").hidden=true;
+              document.getElementById("lbl1").hidden=true;
+            }
+
+            let in2=document.getElementById("lastname");
+            if(in2.value==""){
+              in2.style.border="2px solid red";
+              document.getElementById("img2").hidden=false;
+              document.getElementById("lbl2").hidden=false;
+            }else{
+              in2.style.border="1px solid #5E54A4;";
+              document.getElementById("img2").hidden=true;
+              document.getElementById("lbl2").hidden=true;
+            }
+
+            let in3=document.getElementById("email");
+            let regex=/$[A-Za-z]*@[gmail|email|yahoo]\.com ^/;
+            if(regex.test(in3.value)){
+              in3.style.border="2px solid red";
+              document.getElementById("img3").hidden=false;
+              document.getElementById("lbl3").hidden=false;
+            }else{
+              in3.style.border="1px solid #5E54A4;";
+              document.getElementById("img3").hidden=true;
+              document.getElementById("lbl3").hidden=true;
+            }
+
+            let in4=document.getElementById("password");
+            if(in4.value==""){
+              in4.style.border="2px solid red";
+              document.getElementById("lbl4").hidden=false;
+              document.getElementById("img4").hidden=false;
+            }else{
+              in4.style.border="1px solid #5E54A4;";
+              document.getElementById("img4").hidden=true;
+              document.getElementById("lbl4").hidden=true;
+            }
+
+          }
+      
+        </script>
+        
+
+
+        <p id="p2">
+          By clicking the button, you are agreeing to our
+          <b style="color: #FF7979;"> Tearms and Services</b>
+        </p>
+
+      </form>
+    </div>
+  </section>
+</body>
+</html>
