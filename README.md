@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## The challenge
 
 Your challenge is to build out this introductory component and get it looking as close to the design as possible.
@@ -38,3 +39,6 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
 
 - [Vercel](https://vercel.com/)
+=======
+# week4-bonus
+>>>>>>> 6ccb0b83391b8254b46aab6d835903e4f0619f90
