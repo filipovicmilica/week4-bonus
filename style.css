@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-width: 100vh;
+    
+
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+.glavni{
+    background-color: transparent;
+    position: relative;
+    padding: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.levi{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding-bottom: 10%;
+    padding-right: 5%;
+}
+
+.levi h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 50px;*/
+    line-height: 110% ;
+    letter-spacing: -0.520833px;
+
+    color: white;
+    margin-bottom: 3%;
+}
+.levi p{
+    color:white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.desni{
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+#p1{
+    color:white;
+    padding: 5% 10% 5% 10%; 
+    text-align: center;
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+#p2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 21px;
+    /* or 191% */
+
+    text-align: center;
+    color: #BAB7D4;
+    margin-top: 5%;
+}
+#forma{
+    background-color: white;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    padding: 7%;
+
+    margin-top: 5%;
+}
+
+#forma input{
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 186% */
+    
+    letter-spacing: 0.25px;
+    
+    color: #3D3B48;
+    
+    mix-blend-mode: normal;
+    opacity: 0.75;
+
+    
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+button{
+    background: #38CC8B;
+    border-color:#38CC8B;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    /* identical to box height, or 173% */
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+label{
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+
+    text-align: right;
+
+    color: #FF7979;
+}
+
+#forma img{
+    margin-bottom: 20px;
+    /* transform: translate(-10%,-100%); */
+}
+
+.error-msg{
+    display: flex;
+    align-items:flex-end;
+    justify-items: right;
+    flex-direction: column;
+    /* position: relative; */
+    transform: translate(-10%,-100%);
+    
+}
+
+@media (max-width:700px){
+ body{
+	background-image: url(images/bg-intro-mobile.png);
+    }
+    .glavni{
+        flex-direction: column;
+     }
+
+    p{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
