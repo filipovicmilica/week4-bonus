@@ -167,7 +167,11 @@ label{
 }
 
 @media (max-width:700px){
+<<<<<<< HEAD
  body{
+=======
+    body{
+>>>>>>> 912d7fcc6809760392f0b990b5b74df7074a8096
 	background-image: url(images/bg-intro-mobile.png);
     }
     .glavni{
